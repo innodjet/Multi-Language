@@ -1,7 +1,7 @@
 <?php
 /*include the lang array on the page depending on the language slected by the user.*/
 if(isset($_GET['lang']) && ($_GET['lang']=="En" || $_GET['lang']=="Fr") )	
-    include("".$_GET['lang'].".php");
+    include($_GET['lang'].".php");
 else
     /*This is to include the default lang on the pagethe first time the user comes on the page.*/
     include("En.php"); 
